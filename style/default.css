@@ -3,5 +3,31 @@ box-sizing: border-box;
 }
 html {
     font-size: 14px;
+    font-family: "GolosText", serif;
+    color: rgba(31, 31, 31, 1);
+}
+body {
+    overflow: hidden;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1232px;
+    padding: 0 5px 0;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 

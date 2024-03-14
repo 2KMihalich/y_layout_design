@@ -1,0 +1,114 @@
+.header {
+background-image: linear-gradient(rgba(233, 222, 212, 0.7), rgba(233, 222, 212, 0.7)), url(/img/header/bg.png);
+    background-position: top;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    overflow: hidden;
+}
+
+.header__wrapper {
+    position: relative;
+}
+
+.header__logo {
+    width: 213px;
+    padding-top: 26px;
+}
+
+.header__content {
+    max-width: 542px;
+    padding: 62px 0 130px 0;
+    position: relative;
+    z-index: 100;
+}
+
+.header__title {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    margin-bottom: 24px;
+
+    
+}
+
+.header__description {
+    font-family: "GolosText";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    margin-bottom: 40px;
+}
+
+.header__links {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+}
+
+.header-content__button {
+    width: 50%;
+    margin-right: 16px;
+    padding: 20px 49px;
+    border-radius: 66px;
+    border: 2px solid rgba(31, 31, 31, 1);
+}
+
+.header-content__button:last-child {
+    margin-right: 0;
+}
+
+.header-content__button_active {
+    color: white;
+    background-color: rgba(31, 31, 31, 1);
+}
+
+.city{
+    position: absolute;
+        z-index: 3;
+        bottom: 0;
+        right: -300px;
+        width: 145%;
+}
+
+.circle {
+position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -159px;
+    width: 65%;
+}
+
+.king {
+    position: absolute;
+        right: 415px;
+        top: 535px;
+        z-index: 2;
+}
+
+.king {
+    position: absolute;
+    right: 415px;
+    top: 275px;
+    z-index: 2;
+}
+
+.queen {
+    position: absolute;
+    z-index: 2;
+    right: 25px;
+    top: 155px;
+}
+.knight{
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    right: 240px;
+} 
+.pawn{
+    position: absolute;
+    z-index: 4;
+    bottom: 20px;
+    right: -80px;
+}

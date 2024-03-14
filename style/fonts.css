@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "GolosText";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/./fonts/golos/GolosText-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GolosText";
+    font-style: medium;
+    font-weight: 500;
+    src: url("../fonts/golos/GolosText-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GolosText";
+    font-style: semibold;
+    font-weight: 600;
+    src: url("../fonts/golos/GolosText-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GolosText";
+    font-style: bold;
+    font-weight: 700;
+    src: url("../fonts/golos/GolosText-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: medium;
+    font-weight: 500;
+    src: url("../fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/merriweather/Merriweather-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-style: bold;
+    font-weight: 700;
+    src: url("../fonts/merriweather/Merriweather-Bold.ttf") format("truetype");
+}
+
