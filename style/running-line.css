@@ -1,0 +1,40 @@
+.running-line {
+    overflow:  hidden;
+    background-color: rgba(245, 73, 50, 1);
+}
+.running-line__text{
+    width: 200%;
+    white-space:nowrap;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-family: Merriweather;
+    line-height: 17.6px;
+    padding: 10px 12px;
+    animation: running-line 20s infinite linear;
+}
+
+.running-line__text:after {
+content: 'Дело помощи утопающим — дело рук самих утопающих ! \00B7 Шахматы двигают вперед не только культуру \00B7 Лед тронулся господа присяжные заседатели';
+
+}
+
+@keyframes running-line {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+.running-line__text {
+    font-size: 22px;
+    line-height: 24.2px;
+    padding: 18px 12px;
+}
+}

@@ -1,4 +1,5 @@
 @import './style/normalize.css';
 @import './style/default.css';
 @import './style/fonts.css';
-@import './style/header.css';
+@import './style/header.css'; 
+@import './style/running-line.css';
