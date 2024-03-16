@@ -192,9 +192,24 @@ padding-bottom: 130px;
         }
 }
 @media (min-width: 1366px) {
+    .header__logo-img {
+        width: 245px;
+    }
+    .header__content {
+        padding-top: 42px;
 
+    }
+        .header__title {
+            font-size: 60px;
+            line-height: 66px;
+        }
+    
+        .header__description {
+            margin-bottom: 40px;
+        }
     .city {
-        width: 240%;
+        right: -50%;
+            width: 280%;
         content: url("/img/header/city\(desc\).png");
     }
 
@@ -202,13 +217,13 @@ padding-bottom: 130px;
         position: absolute;
         z-index: 50;
         bottom: -2%;
-        right: 40%;
-        width: 29%;
+right: 30%;
+    width: 36%;
     }
 
     .pawn {
         display: block;
-        right: -2%;
+        right: -19%;
 
     }
 }
