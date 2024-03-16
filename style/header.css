@@ -1,9 +1,18 @@
-.header {
-background-image: linear-gradient(rgba(233, 222, 212, 0.7), rgba(233, 222, 212, 0.7)), url(/img/header/bg.png);
+/*.header {
+background-image: linear-gradient(rgba(233, 222, 212, 0.7), rgba(233, 222, 212, 0.7)), url(../img/header/bg.png);
     background-position: top;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
     overflow: hidden;
+}*/
+
+.header {
+background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
+    background-position: bottom;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    overflow: hidden;
+
 }
 
 .header__wrapper {
@@ -11,25 +20,36 @@ background-image: linear-gradient(rgba(233, 222, 212, 0.7), rgba(233, 222, 212, 
 }
 
 .header__logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+.header__logo-img {
     width: 213px;
-    padding-top: 26px;
 }
 
 .header__content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header__text{
+    padding-top: 23px;
     max-width: 542px;
-    padding: 62px 0 130px 0;
     position: relative;
     z-index: 100;
+    /*border: 2px solid green;*/
 }
 
 .header__title {
     font-family: "Merriweather";
     font-weight: 400;
-    font-size: 60px;
-    line-height: 66px;
-    margin-bottom: 24px;
-
-    
+    font-size: 36px;
+    line-height: 39.6px;
+    margin-bottom: 24px;   
 }
 
 .header__description {
@@ -37,78 +57,158 @@ background-image: linear-gradient(rgba(233, 222, 212, 0.7), rgba(233, 222, 212, 
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .header__links {
     display: flex;
+    flex-direction: column;
     font-weight: 500;
     font-size: 16px;
     line-height: 20.8px;
 }
 
 .header-content__button {
-    width: 50%;
-    margin-right: 16px;
-    padding: 20px 49px;
     border-radius: 66px;
     border: 2px solid rgba(31, 31, 31, 1);
+    margin-bottom: 14px;
+    padding: 18px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .header-content__button:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
+    background-color: white;
 }
 
 .header-content__button_active {
     color: white;
     background-color: rgba(31, 31, 31, 1);
 }
-
-.city{
-    position: absolute;
-        z-index: 3;
-        bottom: 0;
-        right: -300px;
-        width: 145%;
+.header__bg {
+    position: relative;
+    height: 290px;
+    align-self: stretch;
+        /*border: 2px solid red;*/
 }
 
-.circle {
-position: absolute;
-    z-index: 1;
+.bg {
+
+    position: absolute;
+    background-image:  url(../img/header/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    right: -159px;
-    width: 65%;
+    opacity: 0.1;
+}
+.city {
+    position: absolute;
+    bottom: -4%;
+    right: -28%;
+    width: 240%;
+}
+.knight {
+    position: absolute;
+    z-index: 50;
+    bottom: 0%;
+    right: 35%;
+    width: 29%;
+}
+.pawn {
+    display: none;
+    position: absolute;
+    z-index: 50;
+    bottom: 3%;
+    right: 6%;
+    width: 15%;
+}
+@media (min-width: 480px) {
+.header__links {
+    flex-direction: row;
 }
 
-.king {
-    position: absolute;
-        right: 415px;
-        top: 535px;
-        z-index: 2;
+.header-content__button {
+    width: 50%;
+    margin: 0 16px 0 0;
+    padding: 10px 10px;
+}
+.header-content__button:last-child {
+    margin: 0;
+
+}
+.header__bg {
+   height: 180px;
+}
 }
 
-.king {
-    position: absolute;
-    right: 415px;
-    top: 275px;
-    z-index: 2;
+@media (min-width: 768px) {
+.header__content {
+    flex-direction: row;
+}
+.header__text {
+padding-bottom: 130px;
+}
+.header__bg {
+    width: 50%;
+    height: auto;
 }
 
-.queen {
-    position: absolute;
-    z-index: 2;
-    right: 25px;
-    top: 155px;
+.city {
+    width: 400%;
 }
-.knight{
+
+.knight {
     position: absolute;
-    z-index: 4;
-    bottom: 0;
-    right: 240px;
-} 
-.pawn{
-    position: absolute;
-    z-index: 4;
-    bottom: 20px;
-    right: -80px;
+    z-index: 50;
+    bottom: 0%;
+    right: 35%;
+    width: 29%;
+}
+}
+
+@media (min-width: 1024px) {
+
+    .city {
+        width: 300%;
+    }
+
+    .knight {
+        position: absolute;
+        z-index: 50;
+        bottom: -2%;
+        right: 55%;
+        width: 29%;
+    }
+        .pawn {
+            display: block;
+
+        }
+}
+@media (min-width: 1366px) {
+
+    .city {
+        width: 240%;
+        content: url("/img/header/city\(desc\).png");
+    }
+
+    .knight {
+        position: absolute;
+        z-index: 50;
+        bottom: -2%;
+        right: 40%;
+        width: 29%;
+    }
+
+    .pawn {
+        display: block;
+        right: -2%;
+
+    }
 }
