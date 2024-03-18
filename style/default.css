@@ -1,10 +1,11 @@
 * {
 box-sizing: border-box;
 }
+
 html {
     font-size: 14px;
     font-family: "GolosText", serif;
-    color: rgba(31, 31, 31, 1);
+    color: rgba(49, 49, 49, 1);
 }
 body {
     overflow: hidden;
@@ -27,6 +28,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.text-red {
+    color: rgb(245, 73, 50);
 }
 a {
     text-decoration: none;

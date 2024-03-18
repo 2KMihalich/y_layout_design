@@ -1,0 +1,56 @@
+.advertising__lecture {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 34px;
+}
+.advertising-lecture__text {
+    text-transform: uppercase;
+    font-family: Merriweather;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+}
+.advertising-lecture__text:first-child {
+    margin-bottom: 24px;
+}
+.advertising-lecture__img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+.advertising-lecture__img-container {
+    min-width: 335px;
+
+}
+
+@media (min-width: 768px) {
+    .advertising__lecture {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .advertising-lecture__text {
+
+    }
+    .advertising-lecture__text:first-child {
+        display: none;
+    }
+    .advertising-lecture__text:last-child::before {
+        content: ' чтобы поддержать международный васюкинский турнир ';
+    }
+    .advertising-lecture__img-container {
+        max-width: 394px;
+        order: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .advertising-lecture__text {
+        max-width: 764px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48.6px;
+        flex-basis: auto;
+    }
+}
