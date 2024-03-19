@@ -1,5 +1,7 @@
 * {
 box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
 html {
@@ -8,14 +10,15 @@ html {
     color: rgba(49, 49, 49, 1);
 }
 body {
-    overflow: hidden;
     min-width: 375px;
 }
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
-
+ul{
+    list-style: none;
+}
 
 .container {
     max-width: 1262px;

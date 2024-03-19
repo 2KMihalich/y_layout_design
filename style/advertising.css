@@ -4,6 +4,7 @@
     padding-top: 48px;
     padding-bottom: 34px;
 }
+
 .advertising-lecture__text {
     text-transform: uppercase;
     font-family: Merriweather;
@@ -11,16 +12,95 @@
     font-weight: 400;
     line-height: 38px;
 }
+
 .advertising-lecture__text:first-child {
     margin-bottom: 24px;
 }
+
 .advertising-lecture__img {
     width: 100%;
     border-radius: 50%;
     margin-bottom: 24px;
 }
+
 .advertising-lecture__img-container {
     min-width: 335px;
+}
+
+.advertising-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.advertising-event__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.advertising-event__img-wrapper {
+    padding-bottom: 24px;
+    max-width: 474px;
+}
+
+.advertising-event__img {
+    width: 100%;
+}
+
+.advertising-event__pgraph {
+    font-family: Merriweather;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 37.8px;
+    padding-bottom: 44px;
+}
+
+.advertising-event__list {
+    font-family: "GolosText";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.event-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgb(203, 203, 203);
+    padding: 16px 0;
+}
+
+.event-list__item span:first-child {
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.event-list__item span:last-child {
+    font-weight: 600;
+}
+
+.line-through {
+    position: relative;
+    margin-right: 12px;
+}
+
+.line-through::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(245, 73, 50);
+    top: 55%;
+    height: 2px;
+    width: 100%;
+
+}
+
+.advertising-event__link {
+    font-family: "GolosText";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: rgba(48, 87, 162, 1);
 
 }
 
@@ -30,18 +110,28 @@
         align-items: center;
         justify-content: space-between;
     }
-    .advertising-lecture__text {
 
-    }
     .advertising-lecture__text:first-child {
         display: none;
     }
+
     .advertising-lecture__text:last-child::before {
         content: ' чтобы поддержать международный васюкинский турнир ';
     }
+
     .advertising-lecture__img-container {
         max-width: 394px;
         order: 1;
+    }
+
+    .advertising-event {
+
+        flex-direction: row;
+
+    }
+
+    .advertising-event__img-wrapper {
+        align-self: flex-start;
     }
 }
 
@@ -53,4 +143,53 @@
         line-height: 48.6px;
         flex-basis: auto;
     }
+
+    .advertising-event {
+
+        justify-content: space-between;
+        margin-bottom: 200px;
+
+    }
+
+    .advertising-event__info {
+        max-width: 704px;
+        align-self: flex-start;
+    }
+
+    .event-list__item {
+        padding: 0;
+    }
+
+    .advertising-event__img-wrapper {
+        margin-right: 16.5px;
+        max-width: none;
+        flex-grow: 1;
+        padding: 0;
+    }
+
+    .event-list__item span {
+        flex-basis: calc(50% - 16px);
+        margin: 0;
+        padding: 16px 0;
+    }
+
+    .event-list__item>span:first-child {
+        border-right: 2px solid rgb(203, 203, 203);
+        margin: 0;
+    }
+
+    .event-list__item>span:last-child {
+
+        margin: 0 0 0 16px;
+    }
+
+    .advertising-event__pgraph {
+        font-size: 36px;
+        line-height: 48.6px;
+    }
+
+    .advertising-event__pgraph>.text-red {
+        font-weight: 700;
+    }
+
 }
