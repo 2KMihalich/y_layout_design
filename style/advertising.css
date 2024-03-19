@@ -64,6 +64,11 @@
     margin-bottom: 40px;
 }
 
+.advertising-event__list>span:first-child {
+    color: rgba(49, 49, 49, 0.7);
+}
+
+
 .event-list__item {
     display: flex;
     flex-wrap: wrap;

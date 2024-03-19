@@ -1,6 +1,5 @@
-
 .header {
-background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
+    background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
     background-position: bottom;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -29,7 +28,7 @@ background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
 
 }
 
-.header__text{
+.header__text {
     padding-top: 23px;
     max-width: 542px;
     position: relative;
@@ -42,7 +41,7 @@ background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
     font-weight: 400;
     font-size: 36px;
     line-height: 39.6px;
-    margin-bottom: 24px;   
+    margin-bottom: 24px;
 }
 
 .header__description {
@@ -81,17 +80,18 @@ background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
     color: white;
     background-color: rgba(31, 31, 31, 1);
 }
+
 .header__bg {
     position: relative;
     height: 290px;
     align-self: stretch;
-        /*border: 2px solid red;*/
+    /*border: 2px solid red;*/
 }
 
 .bg {
 
     position: absolute;
-    background-image:  url(../img/header/bg.png);
+    background-image: url(../img/header/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 10;
@@ -101,12 +101,14 @@ background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
     bottom: 0;
     opacity: 0.1;
 }
+
 .city {
     position: absolute;
     bottom: -4%;
     right: -28%;
     width: 240%;
 }
+
 .knight {
     position: absolute;
     z-index: 50;
@@ -114,6 +116,7 @@ background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
     right: 35%;
     width: 29%;
 }
+
 .pawn {
     display: none;
     position: absolute;
@@ -122,48 +125,53 @@ background: linear-gradient(rgba(233, 222, 212, 0.2), rgba(233, 222, 212, 0.2));
     right: 6%;
     width: 15%;
 }
+
 @media (min-width: 480px) {
-.header__links {
-    flex-direction: row;
-}
+    .header__links {
+        flex-direction: row;
+    }
 
-.header-content__button {
-    width: 50%;
-    margin: 0 16px 0 0;
-    padding: 10px 10px;
-}
-.header-content__button:last-child {
-    margin: 0;
+    .header-content__button {
+        width: 50%;
+        margin: 0 16px 0 0;
+        padding: 10px 10px;
+    }
 
-}
-.header__bg {
-   height: 180px;
-}
+    .header-content__button:last-child {
+        margin: 0;
+
+    }
+
+    .header__bg {
+        height: 180px;
+    }
 }
 
 @media (min-width: 768px) {
-.header__content {
-    flex-direction: row;
-}
-.header__text {
-padding-bottom: 130px;
-}
-.header__bg {
-    width: 50%;
-    height: auto;
-}
+    .header__content {
+        flex-direction: row;
+    }
 
-.city {
-    width: 400%;
-}
+    .header__text {
+        padding-bottom: 130px;
+    }
 
-.knight {
-    position: absolute;
-    z-index: 50;
-    bottom: 0%;
-    right: 35%;
-    width: 29%;
-}
+    .header__bg {
+        width: 50%;
+        height: auto;
+    }
+
+    .city {
+        width: 400%;
+    }
+
+    .knight {
+        position: absolute;
+        z-index: 50;
+        bottom: 0%;
+        right: 35%;
+        width: 29%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -179,19 +187,23 @@ padding-bottom: 130px;
         right: 55%;
         width: 29%;
     }
-        .pawn {
-            display: block;
 
-        }
+    .pawn {
+        display: block;
+
+    }
 }
+
 @media (min-width: 1366px) {
     .header__logo-img {
         width: 245px;
     }
+
     .header__content {
         padding-top: 42px;
 
     }
+
     .header__title {
         font-size: 60px;
         line-height: 66px;
@@ -200,10 +212,11 @@ padding-bottom: 130px;
     .header__description {
         margin-bottom: 40px;
     }
+
     .city {
         right: -50%;
-            width: 280%;
-        content: url("/img/header/city\(desc\).png");
+        width: 280%;
+        content: url("../img/header/city\(desc\).png");
     }
 
     .knight {

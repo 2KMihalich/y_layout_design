@@ -2,7 +2,7 @@
     font-family: "GolosText";
     font-style: normal;
     font-weight: 400;
-    src: url("/./fonts/golos/GolosText-Regular.ttf") format("truetype");
+    src: url("../fonts/golos/GolosText-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -46,4 +46,3 @@
     font-weight: 700;
     src: url("../fonts/merriweather/Merriweather-Bold.ttf") format("truetype");
 }
-
